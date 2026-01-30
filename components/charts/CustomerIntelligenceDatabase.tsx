@@ -9,7 +9,8 @@ interface CustomerData {
   businessType: string
   coreBusinessActivities: string
   geographicPresence: string
-  vehicleCategoriesHandled: string
+  totalAnnualRevenue: string
+  customerSizeScale: string
   // Contact Details
   keyContactPerson: string
   designation: string
@@ -41,7 +42,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for football leagues and major entertainment events',
     coreBusinessActivities: 'Sports and entertainment',
     geographicPresence: 'UK, Ireland',
-    vehicleCategoriesHandled: '850',
+    totalAnnualRevenue: '850',
+    customerSizeScale: 'Large multinational hospitality',
     keyContactPerson: 'Jon Davies',
     designation: 'CEO',
     emailAddress: 'j.davies@levyuk.com',
@@ -65,7 +67,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for major sport tourism and entertainment events',
     coreBusinessActivities: 'Hospitality and catering',
     geographicPresence: 'France, USA, UK, Global',
-    vehicleCategoriesHandled: '3200',
+    totalAnnualRevenue: '3200',
+    customerSizeScale: 'Large multinational hospitality',
     keyContactPerson: 'Nathalie Bellon-Szabo',
     designation: 'CEO Sodexo Live!',
     emailAddress: 'n.bellon@sodexolive.com',
@@ -89,7 +92,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for motorsports and major sport tourism',
     coreBusinessActivities: 'Event management',
     geographicPresence: 'USA, UK, Germany',
-    vehicleCategoriesHandled: '1850',
+    totalAnnualRevenue: '1850',
+    customerSizeScale: 'Large multinational hospitality',
     keyContactPerson: 'Shervin Mirhashemi',
     designation: 'President & CEO',
     emailAddress: 's.mirhashemi@legends.net',
@@ -113,7 +117,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Hospitality and catering',
     coreBusinessActivities: 'Facilities and venue management',
     geographicPresence: 'USA, Canada',
-    vehicleCategoriesHandled: '2400',
+    totalAnnualRevenue: '2400',
+    customerSizeScale: 'Large multinational hospitality',
     keyContactPerson: 'Rick Abramson',
     designation: 'President - Sportservice',
     emailAddress: 'r.abramson@delawarenorth.com',
@@ -137,7 +142,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for tennis and rugby events',
     coreBusinessActivities: 'Travel and tourism',
     geographicPresence: 'UK, Ireland',
-    vehicleCategoriesHandled: '4200',
+    totalAnnualRevenue: '4200',
+    customerSizeScale: 'Large multinational hospitality',
     keyContactPerson: 'Gary Green',
     designation: 'Managing Director - Sports & Leisure',
     emailAddress: 'g.green@compass-group.co.uk',
@@ -161,7 +167,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for major sport tourism',
     coreBusinessActivities: 'Event management',
     geographicPresence: 'USA, Qatar, France',
-    vehicleCategoriesHandled: '1620',
+    totalAnnualRevenue: '1620',
+    customerSizeScale: 'Specialized premium lounge',
     keyContactPerson: 'Paul Caine',
     designation: 'President',
     emailAddress: 'p.caine@onlocationexp.com',
@@ -185,7 +192,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for motorsports and tennis',
     coreBusinessActivities: 'Hospitality and catering',
     geographicPresence: 'USA, Monaco, UK',
-    vehicleCategoriesHandled: '680',
+    totalAnnualRevenue: '680',
+    customerSizeScale: 'Mid Size regional agencies',
     keyContactPerson: 'Brian Ruede',
     designation: 'CEO',
     emailAddress: 'b.ruede@quintevents.com',
@@ -209,7 +217,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Operators managing hospitality for football leagues and rugby',
     coreBusinessActivities: 'Sports and entertainment',
     geographicPresence: 'UK, Spain',
-    vehicleCategoriesHandled: '420',
+    totalAnnualRevenue: '420',
+    customerSizeScale: 'Mid Size regional agencies',
     keyContactPerson: 'Rob Massey',
     designation: 'CEO & Co-Founder',
     emailAddress: 'r.massey@seatunique.com',
@@ -233,7 +242,8 @@ const sampleCustomerData: CustomerData[] = [
     businessType: 'Facilities and venue management',
     coreBusinessActivities: 'Facilities and venue management',
     geographicPresence: 'UK, Ireland',
-    vehicleCategoriesHandled: '540',
+    totalAnnualRevenue: '540',
+    customerSizeScale: 'Local stadium hospitality managers',
     keyContactPerson: 'David Hornby',
     designation: 'Managing Director',
     emailAddress: 'd.hornby@keithprowse.co.uk',
@@ -338,8 +348,8 @@ export default function CustomerIntelligenceDatabase({ title }: CustomerIntellig
       <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.customerName}</td>
       <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.businessType}</td>
       <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.coreBusinessActivities}</td>
-      <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.geographicPresence}</td>
-      <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.vehicleCategoriesHandled}</td>
+      <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.totalAnnualRevenue}</td>
+      <td className="border border-gray-300 px-3 py-2 text-sm text-black">{customer.customerSizeScale}</td>
     </>
   )
 
